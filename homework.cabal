@@ -1,0 +1,36 @@
+cabal-version: 2.2
+
+name: homework
+version: 2021.2
+
+test-suite homework
+  build-depends:
+    base,
+    containers,
+    mtl,
+    QuickCheck,
+    tasty-discover,
+    tasty-quickcheck,
+    tasty,
+    transformers,
+  default-extensions:
+    BlockArguments
+    DeriveAnyClass
+    DeriveGeneric
+    DerivingStrategies
+    EmptyDataDeriving
+    GeneralizedNewtypeDeriving
+    LambdaCase
+    TemplateHaskell
+    TypeApplications
+    TypeOperators
+  default-language: Haskell2010
+  main-is: Main.hs
+  other-modules:
+    StringSum
+    NonEmpty
+    Eval
+    Moving
+    Parser
+    RWS
+  type: exitcode-stdio-1.0
